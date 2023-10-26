@@ -1,0 +1,32 @@
+<!-- Css - je použivane na formatovanie stranky a jednotlivvych elementov 
+v podstate to urobi layout -->
+<!-- CSS - zakladna funkcionalita: kontroluje farby, fonty, velkosti , ako su elementy poziciovane
+pozadie stranky a tak isto ako je stranka viditelna pre ostatné zariadenia
+CSS- Cascadin style sheet
+môžme ho použiit v 3 formach 
+1. style atribut vo vnutri html
+2. v style ktorý sa ale nachádza v heade
+3. externe v ramci novo vytvoreneho suboru -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 3. pripad externe css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- internal CSS 2.pripad v heade -->
+        <style>
+            body {background-color: seagreen;}
+            h2{color: blueviolet;}
+            p{font-size: xx-large;}
+
+        </style>
+         </head>
+        <body>
+            <!-- inline CSS 1. pripad -->
+            <h1 style="color: blue;">1 pripad</h1>
+            <h2> 2 pripad inernal css</h2>
+            <p>2 pripad internal css</p>
+            <h3>3 pripad externy file</h3>
+            <q>3 pripad</q>
+            <i>3 pripad</i>
+       </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <!-- form element služi na vytvaranie formulara v html forme a je prisposobeny na input uživatela 
+            je to tiež aj container napr. na text checkbox tlacidla... -->
+            <!-- text input -->
+            <center>
+            <form>
+                <label for="first name1">Prihlasovacie meno</label> <br>
+                <input type="text" 
+                id="first name1" 
+                name="first name1"
+                autofocus=""
+                autocapitalize="none"
+                required=""
+                autocomplete="first name1"> <br>
+
+                <label for="password1">heslo</label> <br>
+                <input type="password"
+                id="password1"
+                name="password1"
+                autocomplete="current-password"
+                required=""> </form>
+
+                <img src="oko-removebg-preview.png"
+                     width="20px"
+                     height="20px"
+                     style=
+                         "display: inline; 
+                         margin-left: -1.5%; 
+                         vertical-align: middle"
+                     id="togglePassword">
+                <br /><br />
+                <button type="submit">
+                    Login
+                </button> </form></center>
+                
+                <script>
+                    const togglePassword =
+                          document.querySelector('#togglePassword');
+             
+                    const password = 
+                          document.querySelector('#password1');
+             
+                    togglePassword.
+                    addEventListener('click', function (e) {
+             
+                        // Toggle the type attribute 
+                        const type = password.getAttribute(
+                            'type') === 'password' ? 'text' : 'password';
+                        password.setAttribute('type', type);
+             
+                        // Toggle the eye slash icon 
+                        if (togglePassword.src.match(
+                                "slashedeye-removebg-preview.png")) {
+                            togglePassword.src =
+                                "oko-removebg-preview.png";
+                        } else {
+                            togglePassword.src =
+                                  "slashedeye-removebg-preview.png";
+                        }
+                    }); 
+                </script>
+                <p>vyber si najoblubenejsi dopravny prostriedok : </p> <br>
+                <form >
+                    <input type="radio" id="car" name="naj. prostriedok" value="Auto">
+                    <label for="car">Auto</label> <br>
+
+                <form >
+                    <input type="radio" id="mhd" name="naj. prostriedok" value="MHD">
+                    <label for="mhd">MHD</label> <br>
+
+                <form >
+                    <input type="radio" id="bike" name="naj. prostriedok" value="bicykel">
+                    <label for="bike">Bicykel</label> <br>
+                </form>
+
+
+                <p>zaškrtni si svoj oblubeny checkbox : </p>
+                <form >
+                    <input type="checkbox" id="check1" name="check1" value="Red">
+                    <label style="color: red;" for="check1">Red</label> <br>
+
+                <form >
+                    <input type="checkbox" id="check2" name="check2" value="Blue">
+                    <label style="color:blue;" for="check2">Blue</label> <br>
+
+                <form >
+                    <input type="checkbox" id="check3" name="check3" value="Green">
+                    <label style="color: green;" for="check3">Green</label> <br>
+
+            
+        </body>
+    </head>
+</html>

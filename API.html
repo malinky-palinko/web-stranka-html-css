@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>geolokacia</h1>
+            <p>stlač tlačidlo a zisti kde sa nachadzaš.</p>
+            <button onclick="getLocation()">try it</button>
+            <p id="locat"></p>
+            <script>
+                const location = document.getElementById("locat");
+                function getLocation () {
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else{
+                        location.innerHTML = "This browser is not supported" ; 
+                    }
+                }
+                function showPosition(position){
+                    location.innerHTML = "Latitude : "  +position.coords.latitude + 
+                    "<br> longtitude : " + position.coords.latitude;
+                }
+
+            </script>
+        </body>
+    </head>
+</html>

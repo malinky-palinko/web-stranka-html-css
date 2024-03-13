@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+
+            <video height="400" width="400" controls src="videoplayback.mp4" autoplay muted></video>
+            <!-- autoplay na automaticke zapnutie videa, muted na automaticke vypnutie zvuku -->
+            <div style="text-align: center;">
+            <button onclick="playPause()">Play/pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br>
+            <video id="video1" width="350" height="350" controls src="videoplayback.mp4"></video>
+            </div>
+            <script>
+                var myVideo = document.getElementById("video1")
+                function playPause(){
+                    if (myVideo.paused)
+                    myVideo.play();
+                else myVideo.pause();
+                }
+
+                function makeBig() {
+                    myVideo.width = 600;
+                    myVideo.heig
+                }
+
+                function makeSmall() {
+                    myVideo.width = 200 ;
+                }
+
+                function makeNormal() {
+                    myVideo.width = 350 ;
+                }
+
+            </script>
+            <p>First ever video downloaded from youtube page.</p>
+            <br>
+            <audio src="Real-Madrid-FC-Theme-Song-Anthem-via-Naijafinix.com_.mp3" controls></audio>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cx007XYR1DY?si=qtkLxQHoSVmJRSrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <img src="ihate.gif" alt="nle">
+        
+        </body>
+    </head>
+</html>

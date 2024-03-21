@@ -1,0 +1,37 @@
+<!-- može zobrazovat data v roznych podobach
+zapisovanie do inner html
+zapisovanie do document write
+zapisovanie do window  alert
+zapisovanie do consol log -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>prvy priklad</h1>
+            <p>klasicka zmena pomocou innerhtml</p>
+            <p id="javas1"></p>
+            <script>document.getElementById("javas1").innerHTML = 5 + 6;
+            </script>
+
+            <h1>druhy priklad</h1>
+            <p>pomocou writu</p>
+            <script>document.write(5+6)</script>
+
+            <h1>treti priklad</h1>
+            <p>pomocou alert</p>
+            <script>window.alert(5+6)</script>
+
+            <h1>štvrty priklad</h1>
+            <p>pomocou consol</p>
+            <script>console.log(5+6)</script>
+            
+            <h1>bonus priklad</h1>
+            <p>print funkcionalita</p>
+            <button onclick="window.print()"> vytlač</button>
+
+
+        </body>
+    </head>
+</html>
